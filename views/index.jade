@@ -1,0 +1,23 @@
+
+extends layout
+
+block content
+    h1.
+        show all order 
+    ul
+        each ord, i in order
+            li
+               
+                span Order ID : #{ord.orderId}      
+                span Company Name:  #{ord.companyName}
+                span Adress :  #{ord.customerAddress}
+                span Order Item :  #{ord.orderItem}
+    a(href="/company?search=SuperTrader") 1. show all orders from a particular company 
+    hr
+    a(href="/address?search=Steindam") 2. show all orders to a particular address
+    hr
+    a(href="/delete?id=002") 3. delete a particular order given an OrderId
+    hr
+    a(href="/groups") 4 . Groups
+
+         

@@ -1,0 +1,14 @@
+
+extends layout
+
+block content        
+    h1.
+        show all order company filter 
+    ul
+        each ord, i in searchByFilterCompany
+            li
+               
+                span Order ID : #{ord.orderId}      
+                span Company Name:  #{ord.companyName}
+                span Adress :  #{ord.customerAddress}
+                span Order Item :  #{ord.orderItem}
